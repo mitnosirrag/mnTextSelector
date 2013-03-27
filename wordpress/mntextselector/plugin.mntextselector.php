@@ -18,7 +18,9 @@ register_deactivation_hook(__FILE__,
 Class MNTextSelectorPlugin {
 
     static public function init() {
-        add_action('wp_enqueue_script',
+        add_action('admin_menu',
+            array('MNTextSelectorPlugin','checkInstalled'));
+        add_action('wp_enqueue_scripts',
             array('MNTextSelectorPlugin','initScripts'));
     }
 
@@ -39,7 +41,7 @@ Class MNTextSelectorPlugin {
     }
 
     public static function initScripts() {
-        $src = self::getBaseURL() . 'js/jquery.mntextselector.closure.js';
+        $src = self::getBaseURL() . '/js/jquery.mntextselector.closure.js';
         wp_register_script('mntextselector-closure',$src);
         wp_enqueue_script('mntextselector-closure');
     }

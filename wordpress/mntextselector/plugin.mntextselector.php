@@ -42,7 +42,7 @@ Class MNTextSelectorPlugin {
 
     public static function initScripts() {
         $src = self::getBaseURL() . '/js/jquery.mntextselector.closure.js';
-        wp_register_script('mntextselector-closure',$src);
+        wp_register_script('mntextselector-closure',$src,array('jquery'));
         wp_enqueue_script('mntextselector-closure');
     }
 

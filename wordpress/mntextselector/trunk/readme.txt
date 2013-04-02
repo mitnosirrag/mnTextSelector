@@ -4,7 +4,7 @@ Tags: text functions, jquery plugins, jquery, javascript, highlighted text
 Requires at least: 3.0.1
 Tested up to: 3.5.1
 License: GPLv3
-Stable tag: 1.0
+Stable tag: 1.2
 
 Quickly add callback functions for user-highlighted text with JavaScript.
 
@@ -35,3 +35,8 @@ mnTextSelector lets you quickly create custom functions to run when a user selec
 
 1. Quickly add callback functions with `jQuery.mnTextSelector.addOption(label,callback)`.
 2. Options will appear over user-highlighted text.
+
+== Upgrade Notice ==
+
+= 1.2 =
+Bug fixes and jQuery conflict fixes

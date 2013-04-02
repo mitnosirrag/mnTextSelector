@@ -4,11 +4,11 @@ Plugin Name: mnTextSelector jQuery plugin
 Plugin URI: https://github.com/mitnosirrag/mnTextSelector
 Description: Quickly attach callback functions to user-highlighted text.
 Author: Tim Garrison
-Version 1.0
 Author URI: http://mitnosirrag.tumblr.com
+Version 1.2
 */
 
-define('MNTEXTSELECTOR_VERSION','1.0');
+define('MNTEXTSELECTOR_VERSION','1.2');
 
 add_action('init',array('MNTextSelectorPlugin','init'));
 
